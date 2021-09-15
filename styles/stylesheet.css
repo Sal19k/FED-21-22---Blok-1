@@ -1,0 +1,173 @@
+html{
+    height: auto;
+    width: 100;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    height: 100em;
+    width: 100;
+    margin: 0;
+    padding: 0;
+}
+
+
+Header {
+    position: fixed;
+    background-color: white;
+    top:0;
+    left: 0;
+    right:0;
+    height: 10vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+nav ol {
+    height: 10vh;
+    width: 100;
+    display: flex;
+    justify-content: space-between;
+    flex: 1 0 100%;
+    align-items:center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    height: 568px;
+    background-color: palevioletred;
+}
+
+article {
+    position: absolute;
+    top: 20em;
+    text-align: center;
+}
+
+article a {
+    background-color: white;
+    padding: 2vh;
+    border-radius: 25px;
+    color: black;
+    text-decoration-line: none;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    color: white; 
+    margin-bottom: 8vh;
+}
+
+article a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    font-weight:bolder;
+}
+
+button {
+    background-image: url('/images/hamburger.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 2em;
+    width: 2em;
+    background-color: white;
+    border: none;
+  }
+  
+
+
+li:nth-of-type(1) {
+    flex: 1;
+}
+
+li:nth-of-type(2) {
+    flex: 1;
+}
+
+li:nth-of-type(3) {
+    flex: 2;
+    text-align: center;
+}
+
+li:nth-of-type(4) {
+    flex: 2;
+   text-align: end;
+}
+
+li:nth-of-type(1) a img{
+    height: auto;
+    width: 5vh;
+}
+
+li:nth-of-type(2) a img{
+    height: auto;
+    width: 5vh;
+}
+
+li:nth-of-type(3) a img{
+    height: auto;
+    width: 8vh;   
+}
+
+li:nth-of-type(4) a{
+    background-color: black;
+    font-size: 9pt;
+    text-align: center;
+    padding: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    border-radius: 25px;
+    color: white;
+    text-decoration-line: none;
+}
+
+section {
+display: flex;
+flex-flow: column;
+padding-right: 10em;
+right: 0;
+left:0;
+padding-left: 2em ;
+   bottom: 0;
+   top: 0;
+    
+   margin-top: 10vh;
+    position: fixed;
+ 
+    background-color: white;
+    transform:translateX(-100%);
+}
+
+section a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+    color: black;
+    padding-top: 30px;
+}
+
+section.anders  {
+    
+    transform:translateX(0%);
+  }

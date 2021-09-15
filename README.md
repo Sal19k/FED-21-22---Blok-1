@@ -36,15 +36,15 @@ responsive
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-https://www.nu.nl/
+https://www.playstation.com/en-us/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 hier de naam van de pagina  
-<img src="images/screenshot1.jpeg" width="375px" alt="omschrijving van de pagina">
+<img src="images/screenshot1.png" width="375px" alt="omschrijving van de pagina">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 hier de naam van de pagina  
-<img src="images/screenshot2.jpeg" width="375px" alt="omschrijving van de pagina">
+<img src="images/screenshot2.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -58,7 +58,7 @@ hier de naam van de pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/schetsen.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
 <img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
