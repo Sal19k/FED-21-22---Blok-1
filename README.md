@@ -22,7 +22,7 @@ Salentino Bommel
 rood
 
 #### Je focus:
-responsive
+surface
  
 </details>
 
@@ -84,20 +84,28 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+
+Aniek
+
+1. Meer info over breakpoint (2kolommen vanuit 1)
+2. Details tag voor menu
+
+
+Salentino
+
+1. Misschien meer info over breakpoint
+2. 
+
+Yen
+1. Wil weten hoe ze het moet aanpakken
+
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Feedback gehad op semantiek
+- Verder geen opmerkingen 
 
 </details>
 
@@ -117,12 +125,17 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Aniek
 
+1.  Wilt weten welke html elementen zij het beste kan gebruiken voor haar tweede pagina en of zij iframes mag gebruiken.
+
+
+
+Salentino
+
+1. Geen vragen
+
+Yen
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
