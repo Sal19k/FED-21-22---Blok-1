@@ -36,9 +36,6 @@ function getInputValue(){
         var laser = new Audio('laser.mp3');
         var laservorm = document.querySelector("div")
 
-        
-
-        
     
     if(inputVal == "doei")
     {
