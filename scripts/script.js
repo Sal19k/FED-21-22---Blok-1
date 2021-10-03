@@ -30,6 +30,7 @@ function getInputValue(){
         var inputVal = document.getElementById("veld").value;
         var sectiondansen1 = document.querySelector("ol li:nth-of-type(2) button.kruis");
         var sectiondansen2 = document.querySelector("ol li:first-of-type button");
+        var dans = document.querySelector("body");
         var body = document.querySelector("body")
         var main = document.querySelector("main")
         var audio = new Audio('music.mp3');
@@ -43,7 +44,7 @@ function getInputValue(){
             console.log("ja");
     }
 
-    if(inputVal == "blingbling")
+    if(inputVal == "bling")
     {
         document.documentElement.style.setProperty('--psblue', '#FFC0CB');
         document.documentElement.style.setProperty('--light', '#FFC0CB');
@@ -62,15 +63,17 @@ function getInputValue(){
         document.documentElement.style.setProperty('--psgray', '#1f1f1f');
         sectiondansen1.classList.remove("dansen");
         sectiondansen2.classList.remove("dansen");
+        dans.classList.remove("dancing");
         body.classList.remove("bling");
         main.classList.remove("bling");
         audio.pause();
         console.log("normaal");
     }
-    if(inputVal == "dansen")
+    if(inputVal == "feestje")
     {
         sectiondansen1.classList.toggle("dansen");
         sectiondansen2.classList.toggle("dansen");
+        dans.classList.toggle("dancing");
         console.log("dansen");
         audio.play();
     }

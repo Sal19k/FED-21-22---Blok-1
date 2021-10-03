@@ -25,6 +25,12 @@ body {
     overscroll-behavior-y: none;
 }
 
+body.dancing {
+    background-image: url('images/dancinggod.gif');
+    background-color: var(--psblue2);
+    background-size: 100vw;
+}
+
 body.bling, main.bling {
     background-image: url('images/bling.gif');
 }
