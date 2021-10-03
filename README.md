@@ -78,7 +78,7 @@ hier de naam van de pagina
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Pagina 1 is bijna af, ik zou alleen nog meer uitleg over de breakpoints willen, ookal heb ik surface gekozen.
 
 
 ### Agenda voor meeting
@@ -138,12 +138,7 @@ Salentino
 Yen      
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
+We hebben Ons werk laten zien, verder had Aniek haar vragen gesteld.
 
 </details>
 
@@ -159,28 +154,24 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Voice over
+Voice over was best ingewikkeld, omadt het best technisch en montoon is als beginner. 
+Ik heb des ondanks het wel voor elkaar gekregen, om de voice over tekst te laten lezen.
 
 
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Bril
+Met de half zwarte kant bril kon im best nog wel zien. Ik denk vooral omdat het niet op mijn oog 
+was dat ik daarom automatisch mijn hoofd ging draaien om iets te zien
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+
+#### Ballon
+Het was vrij lastig om 2 dingen tegelijkertijd aan iets optimaal te werken
+
+<img src="images/screenshot1.png" width="375px" alt="omschrijving van de pagina">
 
 
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Elektrisch
+Ik vond het zelf bijna niet te doen, vooral omdat je echt geen controle hebt tenzij je je arm aanspant.
 
 </details>
 
@@ -194,26 +185,20 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Pagina 1 en 2 zijn bijna af. Ik wil beginnen met de extra surface elementen
 
 
 ### Agenda voor meeting
-samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Aniek wilde weten hoe ze een object van 1 naar 2 kolommen krijg en hoe zij een specifieke stijl kan krijgen bij een focus state.
+
+Yen wilde weten hoe zij mijn hamburgericoon naar rechts krijg en hetzelfde als Aniek. En hoe ze een foto iets later kan laten verschijnen.
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
+We hebben vooral elkaars werk bekeken. Ik heb niet altijd vragen, vooral omdat ik vaak het gevoel heb dat 
+de antwoorden in de DLO oefeningen te vinden zijn of op het internet.
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
 
 </details>
 
@@ -227,7 +212,8 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De eerste pagina ging goed, de javascript ging goed, vooral ook omdat ik ging experimenteren. 
+De tweede pagina was wat moeilijker omdat ik moeite had met de css
 
 ### Screenshot(s)
 
@@ -246,8 +232,8 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. DLO Oefeningen vooral, bijvoorbeeld bij de animaties
+2. https://css-tricks.com/snippets/css/a-guide-to-flexbox/ Voor als ik het niet meer ff weet.
+3. Veel verschillende css tricks forums bekeken om een soort eigen code te maken (js code voor het typen.)
 
 </details>

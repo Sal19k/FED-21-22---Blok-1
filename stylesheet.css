@@ -1,8 +1,15 @@
+/* Kleur */
+:root {
+    --light: white;
+    --dark: black;
+    --psblue: #07439D;
+    --psblue2: #3DAEFC;
+    --psgray: #1f1f1f;
+  }
+
 html{
     height: auto;
     width: 100;
-
-    
 }
 
 body {
@@ -11,15 +18,20 @@ body {
     width: 100;
     margin: 0;
     padding: 0;
+    background-color: var(--dark);
     background-image: url('images/background.png');
     background-repeat: no-repeat;
     overflow-x: hidden;
     overscroll-behavior-y: none;
 }
 
+body.bling, main.bling {
+    background-image: url('images/bling.gif');
+}
+
 Header {
     position: fixed;
-    background-color: white;
+    background-color: var(--light);
     top:0; left: 0;  right:0;
     height: 10vh;
     padding-left: 2vw;
@@ -28,10 +40,79 @@ Header {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
+div{
+    position: fixed;
+    bottom: 0; top: 0; left: 0em; right: 0;
+    background-color: rgba(100, 0, 0, .5);
+    margin: 0;
+    transform:translateY(-700%);
+    transition: 3s;
+}
+
+div.vlieg {
+    transform:translateY(200%);
+}
+
+figure {
+    position: absolute;
+    opacity: 100%;
+    bottom: 15em; top: 15em; left: 9.5em; right: 9.5em;
+    background-color: red;
+    margin: 0;
+}
+
+
+ol li:nth-of-type(2) button.kruis.dansen {
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-name:laser;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    height: auto;
+    margin-top: 21em;
+}
+
+label {
+    align-self: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    text-decoration: none;
+    color: var(--light);
+}
+
+input {
+    display: flex;
+    align-self: center;
+    margin-left: 1em;
+    background-color: white;
+    border: 0px solid;
+    height: 2em;
+    width: 10em;
+}
+
+input:focus {
+    outline: 0;
+  }
+
 footer {
-    background-color: black;
+    background-color: var(--psgray);
     bottom: 0; left: 0;  right:0;
-    margin-top: 1.2em;
+    margin-bottom:0;
     height: 10vh;
     padding-left: 2vw;
     padding-right: 2vw;
@@ -52,7 +133,8 @@ header nav ol {
     text-decoration: none;
 }
 
-footer nav ol {
+
+#page1 footer nav ol {
     height: 10vh;
     width: 100;
     display: flex;
@@ -66,16 +148,7 @@ footer nav ol {
     text-decoration: none;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: column;
-    justify-content: center;
-    height: auto;
-    margin-top: 21em;
-}
-
-section {
+#page1 section:first-of-type {
     display: flex;
     flex-flow: column;
     padding-right: 10em;
@@ -83,68 +156,105 @@ section {
     padding-left: 2em ;
     margin-top: 10vh;
     position: fixed;
-    background-color: white;
+    background-color: var(--light);
     transform:translateX(-100%);
     transition: 0.5s;
+}
+
+#page1 section:nth-of-type(2) {
+    display: flex;
+    align-items:center;
+    width: 100vw;
+    height: 10vh;
+    right: 0; left:32vw;  top: 0;
+    position:fixed;
+    background-color:var(--psblue);
+    transform:translateY(-200%);
+    transition: 0.5s;
+    z-index: 2;
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    color: white;
+    color: var(--light);
 }
 
-p {
+#page1 article p{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     padding-left: 4vw;
     padding-right: 4vw;
-    color: white; 
+    color: var(--light); 
     margin-bottom: 8vh;
 }
 
-article a {
+#page1 article a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     font-weight:bolder;
 }
 
-button {
+ol li:first-of-type button{
     background-image: url('./images/hamburger.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    height: 2em;
+    width: 2em;
+    background-color: var(--light);
+    border: none;
+}
+
+ol li:first-of-type button.dansen{
+    animation-duration:.5s;
+    animation-iteration-count:infinite;
+    animation-name:dansen;
+}
+
+ol li:first-of-type button.kruis {
+    background-image: url('./images/kruis.png');
+}
+
+ol li:nth-of-type(2) button {
+    background-image: url('./images/search.png');
+    mix-blend-mode: multiply;
     background-size:cover;
     background-repeat: no-repeat;
     height: 2em;
     width: 2em;
-    background-color: white;
+    background-color: var(--light);
     border: none;
 }
+
+ol li:nth-of-type(2) button.kruis {
+    background-image: url('./images/kruis.png');
+}
+
+ol li:nth-of-type(2) button.kruis.dansen {
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    animation-name:dansen;
+}
+
+
+@keyframes dansen {
+    0% {
+      transform:rotate(0);
+    }
+    100% {
+      transform:rotate(1turn);
+    }
+  }
   
-header li:nth-of-type(1) {
+#page1 header li:nth-of-type(1), header li:nth-of-type(2)  {
     flex: 1;
+    
 }
 
-header li:nth-of-type(2) {
-    flex: 1;
-}
-
-header li:nth-of-type(3) {
+header li:nth-of-type(3), header li:nth-of-type(4) {
     flex: 2;
     text-align: center;
-}
-
-header li:nth-of-type(4) {
-    flex: 2;
-   text-align: end;
-}
-
-header li:nth-of-type(1) a img{
-    height: auto;
-    width: 5vh;
-}
-
-header li:nth-of-type(2) a img{
-    height: auto;
-    width: 5vh;
 }
 
 header li:nth-of-type(3) a img{
@@ -152,50 +262,65 @@ header li:nth-of-type(3) a img{
     width: 8vh;   
 }
 
+header li:nth-of-type(4){
+    display: flex;
+    justify-content: flex-end;
+}
+
 header li:nth-of-type(4) a{
-    background-color: black;
+    background-color: var(--dark);
     font-size: 9pt;
     text-align: center; 
     padding: 1vh;
     padding-left: 3vh;
     padding-right: 3vh;
     border-radius: 25px;
-    color: white;
+    color: var(--light);
     text-decoration-line: none;
 }
 
-footer li:nth-of-type(1) a img{
-    height: auto;
-    width: 10vh;
+header li:nth-of-type(4) a:active{
+    background-color: var(--psblue);
 }
 
-section a {
+footer img {
+    height: 10px;
+    width: auto;
+}
+
+#page1 section a {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
     text-decoration: none;
-    color: black;
+    color: var(--dark);
     padding-top: 30px;
-   
 }
 
-section.anders  {
+#page1 section.anders  {
     transform:translateX(0%);
-    
 }
 
-main article:first-of-type {
+#page1 section.zoekuitklap  {
+    transform:translateY(0%);
+}
+
+#page1 main article:first-of-type {
     text-align: center;
 }
 
-main article:first-of-type a {
-    background-color: white;
+#page1 main article:first-of-type a {
+    background-color: var(--light);
     padding: 2vh;
     border-radius: 25px;
-    color: black;
+    color: var(--dark);
     text-decoration-line: none;
 }
 
-main article:nth-of-type(2) {
+#page1 main article:first-of-type a:active{
+    background-color: var(--psblue);
+}
+
+#page1 main article:nth-of-type(2) {
     margin-top: 4em;
     overflow-x:scroll;
     width: auto;
@@ -203,32 +328,22 @@ main article:nth-of-type(2) {
     gap: 1em;
 }
 
-main article:nth-of-type(2) a {
-    height: 4em;
-    width: 8em;
-    background-color: fuchsia;
-    padding: 2vh;
-    border-radius: 15px;
-    color: black;
-    text-decoration-line: none;
-    text-align: center;
-}
-
-main article:nth-of-type(2) a:hover {
+#page1 main article:nth-of-type(2) a {
     height: 4em;
     width: 8em;
     padding: 2vh;
     border-radius: 15px;
-    color: black;
+    color: var(--dark);
     text-decoration-line: none;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 main article:nth-of-type(2) a:nth-of-type(1) {
     grid-column: 1;
 }
 
-main article:nth-of-type(2) a:nth-of-type(2) {
+#page1 main article:nth-of-type(2) a:nth-of-type(2) {
     grid-column: 2  ;
 }
 
@@ -253,3 +368,145 @@ main article:nth-of-type(2) a:nth-of-type(3) {
     background-size:cover;
     background-repeat: no-repeat;
 }
+
+
+/* Pagina2 */
+
+#page2 header {
+    position: fixed;
+    background-color: var(--psgray);
+    top:0; left: 0;  right:0;
+    height: 10vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#page2 body{
+    position: relative;
+    width: 100;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark);
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+}
+
+#page2 main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--dark);
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+    height: auto;
+    margin-top: 3em;
+}
+
+#page2 article:first-of-type{
+    background-color: var(--dark);;
+    width: 100vw;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+#page2 article h1 {
+    font-size: 1.2em;
+    margin-left: -0.5em;
+}
+
+#page2 article h1, #page2 article p{
+    padding-left: 2em;
+    text-align: left;
+    font-family: sans-serif;
+    padding-right: 2em;
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+#page2 article img{
+    width: 100vw;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+#page2 article p:nth-of-type(1) {
+    margin-left: 3em;
+    padding-right: 3em;
+}
+
+#page2 article p:nth-of-type(1),#page2 article p:nth-of-type(2){
+    font-size: 10pt;
+    font-weight: 100;
+    color: lightgray;
+}
+
+#page2 nav ol{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1em;
+}
+
+#page2 nav li:nth-of-type(1) a img{
+    height: auto;
+    width: 6vh;   
+    
+}
+
+#page2 nav p{
+    color:var(--light);
+    padding-left: 1em;
+}
+
+#page2 section{
+    display: grid;
+    flex-wrap: wrap;
+    background-color: var(--dark);
+    height: auto;
+    width: 100vw;
+    margin-bottom: 2em;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+#page2 section a {
+    grid-column: 1;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 10em;
+    height: auto;
+}
+
+#page2 footer{
+    display: flex;
+    align-items: center;
+}
+
+#page2 section:nth-of-type(1) a {
+    background-image: url('./images/newsartikel1.webp');
+}
+
+#page2 section:nth-of-type(2)  a{
+    background-image: url('./images/newsartikel2.webp');
+}
+
+#page2 section:nth-of-type(3) a {
+    background-image: url('./images/newsartikel3.webp');
+}
+
+#page2 section h1 {
+    font-size: 10pt;
+    grid-column: 2;
+}
+
+b {
+    color: var(--psblue2);
+}
+
+
